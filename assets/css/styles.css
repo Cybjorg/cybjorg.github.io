@@ -277,6 +277,7 @@ section {
   color: #fff;
   background-color: #ad1818;
   border-color: #ad1818;
+  border-width: 2px;
 }
 
 .btn-primary:hover {
@@ -296,5 +297,13 @@ section {
   .col-1-2 {
     border-right: 1px solid #ced1d5;
   }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #ad1818;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(173,24,24,.5);
 }
 
