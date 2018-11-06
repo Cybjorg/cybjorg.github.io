@@ -254,3 +254,22 @@ section {
   padding: 0;
 }
 
+.tt-accordion h5 a:hover {
+  text-decoration: none;
+  background-color: #E8E9EA;
+}
+
+.tt-accordion h5 a[aria-expanded="false"]:after {
+  font-family: LineAwesome;
+  content: "\f110";
+  float: right;
+  color: gray;
+}
+
+.tt-accordion h5 a[aria-expanded="true"]:after {
+  font-family: LineAwesome;
+  content: "\f113";
+  float: right;
+  color: gray;
+}
+
