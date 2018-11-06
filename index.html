@@ -12,10 +12,32 @@
 </head>
 
 <body>
-    <div class="jumbotron tt-jumbotron" style="background-image: url(&quot;assets/img/bknd-tech-full-width.jpg&quot;);background-size: cover;">
-        <h1 style="color: #ffffff;">Jumbotron</h1>
-        <p style="color: rgb(255,255,255);">This page header adds visual interest and weight to the top of lessons.</p>
-        <p style="background-position: center;background-size: cover;background-repeat: no-repeat;"></p>
+    <section class="tt-section section-has-divider tt-bottom-divider tt-header-section">
+        <div class="row">
+            <div class="col">
+                <h1>Sneek Peek</h1>
+                <p>Paragraph</p>
+            </div>
+        </div>
+        <div class="tt-bottom-inside-divider"></div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col">
+                <div class="tt-module tt-section-text">
+                    <h2>Heading</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+    </section>
+    <div class="jumbotron jumbotron-fluid tt-jumbotron" style="background-image: url(&quot;assets/img/bknd-tech-full-width.jpg&quot;);background-size: cover;">
+        <h1 class="text-center" style="color: #ffffff;">Jumbotron</h1>
+        <p class="text-center" style="color: rgb(255,255,255);">This page header adds visual interest and weight to the top of lessons.</p>
     </div>
     <div class="tt-title" style="padding-bottom: 3px;">
         <h2><i class="la la-file-text"></i>Heading</h2>
@@ -57,7 +79,7 @@
             <p>Paragraph</p>
         </div>
     </div>
-    <div class="tt-infobox">
+    <div class="tt-infobox mb-4">
         <h4><i class="la la-wrench"></i>Teacher Toolbox - Teaching Technique</h4>
         <div class="tt-infobox-body">
             <p>A&nbsp;<strong>visual walkabout</strong>&nbsp;can be a powerful&nbsp;<strong>teaching technique</strong>&nbsp;to start one of your units, as it allows students to demonstrate their current understanding on a topic, focus on a big idea or concept,
@@ -65,7 +87,7 @@
             <p>For more information on the visual walkabout teaching technique, <a href="#" target="_blank">visit this article by Discovery Education</a>.</p>
         </div>
     </div>
-    <div role="tablist" id="accordion-1">
+    <div role="tablist" id="accordion-1" class="mb-4">
         <div class="card">
             <div class="card-header" role="tab">
                 <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Accordion Item</a></h5>
@@ -97,20 +119,39 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="tt-tabs">
         <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Tab 1</a></li>
-            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Tab 2</a></li>
-            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Tab 3</a></li>
+            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Phase 1</a></li>
+            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Phase 2</a></li>
+            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Phase 3</a></li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane fade show active" role="tabpanel" id="tab-1">
-                <p>Content for tab 1.</p>
+            <div class="tab-pane active" role="tabpanel" id="tab-1">
+                <div class="table-responsive tt-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="tab-pane fade" role="tabpanel" id="tab-2">
+            <div class="tab-pane" role="tabpanel" id="tab-2">
                 <p>Content for tab 2.</p>
             </div>
-            <div class="tab-pane fade" role="tabpanel" id="tab-3">
+            <div class="tab-pane" role="tabpanel" id="tab-3">
                 <p>Content for tab 3.</p>
             </div>
         </div>
