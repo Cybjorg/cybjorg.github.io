@@ -227,7 +227,7 @@ section {
 }
 
 .tt-card-transition .card-body:hover {
-  background: #f4f4f4;
+  background: rgba(222,225,229,0.2);
 }
 
 .tt-card-transition .card-body {
