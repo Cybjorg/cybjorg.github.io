@@ -71,12 +71,12 @@
             <div class="col">
                 <div class="tt-tabs">
                     <ul class="nav nav-tabs">
-                        <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Phase 1</a></li>
-                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Phase 2</a></li>
+                        <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">Phase 1</a></li>
+                        <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-2">Phase 2</a></li>
                         <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Phase 3</a></li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                        <div class="tab-pane" role="tabpanel" id="tab-1">
                             <div class="table-responsive tt-table">
                                 <table class="table table-sm">
                                     <thead>
@@ -153,8 +153,39 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="tab-pane" role="tabpanel" id="tab-2">
-                            <p>Content for tab 2.</p>
+                        <div class="tab-pane active" role="tabpanel" id="tab-2">
+                            <div role="tablist" id="accordion-1" class="tt-accordion">
+                                <div class="card">
+                                    <div class="card-header" role="tab">
+                                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-1" href="div#accordion-1 .item-1">Monday: Teaching and Learning</a></h5>
+                                    </div>
+                                    <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab">
+                                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="div#accordion-1 .item-2">Accordion Item</a></h5>
+                                    </div>
+                                    <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab">
+                                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="div#accordion-1 .item-3">Accordion Item</a></h5>
+                                    </div>
+                                    <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane" role="tabpanel" id="tab-3">
                             <p>Content for tab 3.</p>

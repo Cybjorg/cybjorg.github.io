@@ -238,3 +238,19 @@ section {
   border-bottom: 4px solid #dee2e6;
 }
 
+.tt-accordion h5 a {
+  color: #ad1818;
+  font-weight: bold;
+  font-size: .85em;
+  padding: .75rem 1.25rem;
+  display: block;
+}
+
+.tt-accordion .card {
+  border-radius: 0;
+}
+
+.tt-accordion .card-header {
+  padding: 0;
+}
+
