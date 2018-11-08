@@ -308,6 +308,6 @@ section {
 }
 
 .tt-progress .progress-bar {
-  background-color: #ad1818;
+  background-color: #ad1818 !important;
 }
 
