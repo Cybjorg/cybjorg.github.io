@@ -307,3 +307,7 @@ section {
   box-shadow: 0 0 0 0.2rem rgba(173,24,24,.5);
 }
 
+.tt-progress .progress-bar {
+  background-color: #ad1818;
+}
+
