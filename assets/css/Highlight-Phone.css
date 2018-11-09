@@ -107,3 +107,24 @@
   opacity: 0.2;
 }
 
+.tt-blockquote {
+  padding: 100px 30px 30px;
+  position: relative;
+  background-color: #e9ecef;
+}
+
+.tt-blockquote:before {
+  font-family: LineAwesome;
+  content: '\f2cd';
+  font-size: 75px;
+  color: gray;
+  position: absolute;
+  top: 0;
+}
+
+.tt-blockquote .blockquote-footer {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  text-align: right;
+}
+
