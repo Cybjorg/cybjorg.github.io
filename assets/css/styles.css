@@ -311,3 +311,9 @@ section {
   background-color: #ad1818 !important;
 }
 
+@media (min-width: 768px) {
+  .tt-modal .modal-dialog {
+    max-width: 600px;
+  }
+}
+
