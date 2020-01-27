@@ -1879,7 +1879,8 @@ ul.section-menu.stick {
     .feedback-free-form .free-form-option:hover, .feedback-free-form .free-form-option.option-selected {
       background-color: #b7e6da; }
 
-main table {
+main table,
+#tinymce table {
   border: 0 !important;
   border-collapse: separate;
   border-spacing: 0;
@@ -1895,74 +1896,108 @@ main table {
   -moz-background-clip: border-box;
   -o-background-clip: border-box;
   background-clip: border-box; }
-  main table thead tr th, main table thead tr td {
+  main table thead tr th, main table thead tr td,
+  #tinymce table thead tr th,
+  #tinymce table thead tr td {
     background: #402B56 !important;
     color: white;
     font-weight: 700;
     border: 1px solid #402B56; }
-    main table thead tr th:first-child, main table thead tr td:first-child {
+    main table thead tr th:first-child, main table thead tr td:first-child,
+    #tinymce table thead tr th:first-child,
+    #tinymce table thead tr td:first-child {
       border-top-left-radius: 6px; }
-    main table thead tr th:last-child, main table thead tr td:last-child {
+    main table thead tr th:last-child, main table thead tr td:last-child,
+    #tinymce table thead tr th:last-child,
+    #tinymce table thead tr td:last-child {
       border-top-right-radius: 6px; }
-    main table thead tr th.center, main table thead tr td.center {
+    main table thead tr th.center, main table thead tr td.center,
+    #tinymce table thead tr th.center,
+    #tinymce table thead tr td.center {
       text-align: center; }
-  main table thead + tbody tr:nth-child(even) td {
+  main table thead + tbody tr:nth-child(even) td,
+  #tinymce table thead + tbody tr:nth-child(even) td {
     background-color: #f5f5f5; }
-  main table thead + tbody tr:nth-child(odd) td {
+  main table thead + tbody tr:nth-child(odd) td,
+  #tinymce table thead + tbody tr:nth-child(odd) td {
     background-color: #ffffff; }
-  main table thead + tbody tr:first-child td {
+  main table thead + tbody tr:first-child td,
+  #tinymce table thead + tbody tr:first-child td {
     background: #ffffff !important;
     color: #3f4652;
     font-weight: normal; }
-    main table thead + tbody tr:first-child td:first-child {
+    main table thead + tbody tr:first-child td:first-child,
+    #tinymce table thead + tbody tr:first-child td:first-child {
       border-top-left-radius: 0;
       border-top: 0;
       border-right: 0;
       border-bottom: 0;
       border-left: 1px solid #e8e8e8; }
-    main table thead + tbody tr:first-child td:last-child {
+    main table thead + tbody tr:first-child td:last-child,
+    #tinymce table thead + tbody tr:first-child td:last-child {
       border-top-right-radius: 0;
       border-top: 0;
       border-right: 1px solid #e8e8e8;
       border-bottom: 0;
       border-left: 0; }
-  main table thead + tbody tr:last-child td {
+  main table thead + tbody tr:last-child td,
+  #tinymce table thead + tbody tr:last-child td {
     border-bottom: 1px solid #e8e8e8; }
-    main table thead + tbody tr:last-child td:first-child {
+    main table thead + tbody tr:last-child td:first-child,
+    #tinymce table thead + tbody tr:last-child td:first-child {
       border-bottom-left-radius: 6px; }
-    main table thead + tbody tr:last-child td:last-child {
+    main table thead + tbody tr:last-child td:last-child,
+    #tinymce table thead + tbody tr:last-child td:last-child {
       border-bottom-right-radius: 6px; }
-  main table tbody tr td:first-child {
+  main table tbody tr td:first-child,
+  #tinymce table tbody tr td:first-child {
     border-left: 1px solid #e8e8e8; }
-  main table tbody tr td:last-child {
+  main table tbody tr td:last-child,
+  #tinymce table tbody tr td:last-child {
     border-right: 1px solid #e8e8e8; }
-  main table tbody tr td.center {
+  main table tbody tr td.center,
+  #tinymce table tbody tr td.center {
     text-align: center; }
-  main table tbody tr:nth-child(odd) td {
+  main table tbody tr:nth-child(odd) td,
+  #tinymce table tbody tr:nth-child(odd) td {
     background-color: #f5f5f5; }
-  main table tbody tr:first-child td {
+  main table tbody tr:first-child td,
+  #tinymce table tbody tr:first-child td {
     border-top: 1px solid #e8e8e8; }
-    main table tbody tr:first-child td:first-child {
+    main table tbody tr:first-child td:first-child,
+    #tinymce table tbody tr:first-child td:first-child {
       border-top-left-radius: 6px; }
-    main table tbody tr:first-child td:last-child {
+    main table tbody tr:first-child td:last-child,
+    #tinymce table tbody tr:first-child td:last-child {
       border-top-right-radius: 6px; }
-  main table tbody tr:last-child td {
+  main table tbody tr:last-child td,
+  #tinymce table tbody tr:last-child td {
     border-bottom: 1px solid #e8e8e8; }
-    main table tbody tr:last-child td:first-child {
+    main table tbody tr:last-child td:first-child,
+    #tinymce table tbody tr:last-child td:first-child {
       border-bottom-left-radius: 6px; }
-    main table tbody tr:last-child td:last-child {
+    main table tbody tr:last-child td:last-child,
+    #tinymce table tbody tr:last-child td:last-child {
       border-bottom-right-radius: 6px; }
-  main table tbody tr:only-child td {
+  main table tbody tr:only-child td,
+  #tinymce table tbody tr:only-child td {
     border-bottom: 1px solid #e8e8e8 !important; }
-  main table.plain tbody tr td, main table.-plain tbody tr td {
+  main table.plain tbody tr td, main table.-plain tbody tr td,
+  #tinymce table.plain tbody tr td,
+  #tinymce table.-plain tbody tr td {
     background-color: #ffffff !important; }
-  main table td, main table th {
+  main table td, main table th,
+  #tinymce table td,
+  #tinymce table th {
     padding: 12px;
     border: 0; }
-    main table td p:last-child, main table th p:last-child {
+    main table td p:last-child, main table th p:last-child,
+    #tinymce table td p:last-child,
+    #tinymce table th p:last-child {
       margin-bottom: 0; }
   @media (max-width: 991px) {
-    main table {
+    main table,
+    #tinymce table {
       table-layout: fixed; } }
 
 hr {
