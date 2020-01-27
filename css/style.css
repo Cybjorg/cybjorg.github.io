@@ -2418,20 +2418,24 @@ hr {
   list-style: none;
   padding-left: 0; }
 
-.article-body ol:not(.path) {
+.article-body ol:not(.path),
+#tinymce ol:not(.path) {
   counter-reset: list-counter;
   list-style: none;
   padding-left: 0;
   margin-bottom: 1.5em;
   margin-left: 40px;
   text-indent: -40px; }
-  .article-body ol:not(.path) > li {
+  .article-body ol:not(.path) > li,
+  #tinymce ol:not(.path) > li {
     margin-bottom: 10px;
     line-height: 24px;
     counter-increment: list-counter; }
-    .article-body ol:not(.path) > li:last-child {
+    .article-body ol:not(.path) > li:last-child,
+    #tinymce ol:not(.path) > li:last-child {
       margin-bottom: 0px; }
-    .article-body ol:not(.path) > li:before {
+    .article-body ol:not(.path) > li:before,
+    #tinymce ol:not(.path) > li:before {
       background-color: #A4A9AD;
       width: 24px;
       text-align: center;
@@ -2454,11 +2458,14 @@ hr {
       content: counter(list-counter);
       margin-right: 15px;
       font-size: 14px; }
-    .article-body ol:not(.path) > li ol {
+    .article-body ol:not(.path) > li ol,
+    #tinymce ol:not(.path) > li ol {
       margin-left: 36px; }
-    .article-body ol:not(.path) > li ul {
+    .article-body ol:not(.path) > li ul,
+    #tinymce ol:not(.path) > li ul {
       text-indent: 0; }
-    .article-body ol:not(.path) > li > img {
+    .article-body ol:not(.path) > li > img,
+    #tinymce ol:not(.path) > li > img {
       margin-top: 1em;
       margin-bottom: 0.4em; }
   .article-body ol:not(.path) .fas, .article-body ol:not(.path) .bannerbar:before, .article-body ol:not(.path) .webinar-video .watch-btn a:before, .webinar-video .watch-btn .article-body ol:not(.path) a:before, .article-body ol:not(.path) .far, .article-body ol:not(.path) .btn.print:before,
@@ -2477,73 +2484,154 @@ hr {
   .article-body ol:not(.path) .callout.-bug:before,
   .article-body ol:not(.path) .callout.-file:before,
   .article-body ol:not(.path) .callout.-video:before,
-  .article-body ol:not(.path) .callout.-warning:before, .article-body ol:not(.path) .bannerbar-close:after, .article-body ol:not(.path) ul.takeaway li:before, ul.takeaway .article-body ol:not(.path) li:before, .article-body ol:not(.path) .fad {
+  .article-body ol:not(.path) .callout.-warning:before, .article-body ol:not(.path) .bannerbar-close:after, .article-body ol:not(.path) ul.takeaway li:before, ul.takeaway .article-body ol:not(.path) li:before, .article-body ol:not(.path) .fad,
+  #tinymce ol:not(.path) .fas,
+  #tinymce ol:not(.path) .bannerbar:before,
+  #tinymce ol:not(.path) .webinar-video .watch-btn a:before,
+  .webinar-video .watch-btn #tinymce ol:not(.path) a:before,
+  #tinymce ol:not(.path) .far,
+  #tinymce ol:not(.path) .btn.print:before,
+  #tinymce ol:not(.path) .fl-btn.print:before,
+  #tinymce ol:not(.path) .fl-button.print:before,
+  #tinymce ol:not(.path) .article-vote-question:before,
+  #tinymce ol:not(.path) .feedback-heading:before,
+  #tinymce ol:not(.path) .webinar-video .webinar-video-details li.date:before,
+  .webinar-video .webinar-video-details #tinymce ol:not(.path) li.date:before,
+  #tinymce ol:not(.path) .webinar-video .webinar-video-details li.length:before,
+  .webinar-video .webinar-video-details #tinymce ol:not(.path) li.length:before,
+  #tinymce ol:not(.path) .section_tree .article_list li.promoted:before,
+  .section_tree .article_list #tinymce ol:not(.path) li.promoted:before,
+  #tinymce ol:not(.path) .section_tree .article_list li.internal a:after,
+  .section_tree .article_list li.internal #tinymce ol:not(.path) a:after,
+  #tinymce ol:not(.path) .section_tree h2:before,
+  .section_tree #tinymce ol:not(.path) h2:before,
+  #tinymce ol:not(.path) .article_page .category-list.compact .close:before,
+  .article_page .category-list.compact #tinymce ol:not(.path) .close:before,
+  #tinymce ol:not(.path) .fal,
+  #tinymce ol:not(.path) .fl-call-out[class*="-icon"]:before,
+  #tinymce ol:not(.path) .fl-call-out.-tip:before,
+  #tinymce ol:not(.path) .fl-call-out.-note:before,
+  #tinymce ol:not(.path) .fl-call-out.-bug:before,
+  #tinymce ol:not(.path) .fl-call-out.-file:before,
+  #tinymce ol:not(.path) .fl-call-out.-video:before,
+  #tinymce ol:not(.path) .fl-call-out.-warning:before,
+  #tinymce ol:not(.path) .call_out[class*="-icon"]:before,
+  #tinymce ol:not(.path) .call_out.-tip:before,
+  #tinymce ol:not(.path) .call_out.-note:before,
+  #tinymce ol:not(.path) .call_out.-bug:before,
+  #tinymce ol:not(.path) .call_out.-file:before,
+  #tinymce ol:not(.path) .call_out.-video:before,
+  #tinymce ol:not(.path) .call_out.-warning:before,
+  #tinymce ol:not(.path) .callout[class*="-icon"]:before,
+  #tinymce ol:not(.path) .callout.-tip:before,
+  #tinymce ol:not(.path) .callout.-note:before,
+  #tinymce ol:not(.path) .callout.-bug:before,
+  #tinymce ol:not(.path) .callout.-file:before,
+  #tinymce ol:not(.path) .callout.-video:before,
+  #tinymce ol:not(.path) .callout.-warning:before,
+  #tinymce ol:not(.path) .bannerbar-close:after,
+  #tinymce ol:not(.path) ul.takeaway li:before,
+  ul.takeaway #tinymce ol:not(.path) li:before,
+  #tinymce ol:not(.path) .fad {
     text-indent: 0; }
-  .article-body ol:not(.path)[start="1"] {
+  .article-body ol:not(.path)[start="1"],
+  #tinymce ol:not(.path)[start="1"] {
     counter-increment: list-counter 0; }
-  .article-body ol:not(.path)[start="2"] {
+  .article-body ol:not(.path)[start="2"],
+  #tinymce ol:not(.path)[start="2"] {
     counter-increment: list-counter 1; }
-  .article-body ol:not(.path)[start="3"] {
+  .article-body ol:not(.path)[start="3"],
+  #tinymce ol:not(.path)[start="3"] {
     counter-increment: list-counter 2; }
-  .article-body ol:not(.path)[start="4"] {
+  .article-body ol:not(.path)[start="4"],
+  #tinymce ol:not(.path)[start="4"] {
     counter-increment: list-counter 3; }
-  .article-body ol:not(.path)[start="5"] {
+  .article-body ol:not(.path)[start="5"],
+  #tinymce ol:not(.path)[start="5"] {
     counter-increment: list-counter 4; }
-  .article-body ol:not(.path)[start="6"] {
+  .article-body ol:not(.path)[start="6"],
+  #tinymce ol:not(.path)[start="6"] {
     counter-increment: list-counter 5; }
-  .article-body ol:not(.path)[start="7"] {
+  .article-body ol:not(.path)[start="7"],
+  #tinymce ol:not(.path)[start="7"] {
     counter-increment: list-counter 6; }
-  .article-body ol:not(.path)[start="8"] {
+  .article-body ol:not(.path)[start="8"],
+  #tinymce ol:not(.path)[start="8"] {
     counter-increment: list-counter 7; }
-  .article-body ol:not(.path)[start="9"] {
+  .article-body ol:not(.path)[start="9"],
+  #tinymce ol:not(.path)[start="9"] {
     counter-increment: list-counter 8; }
-  .article-body ol:not(.path)[start="10"] {
+  .article-body ol:not(.path)[start="10"],
+  #tinymce ol:not(.path)[start="10"] {
     counter-increment: list-counter 9; }
-  .article-body ol:not(.path)[start="11"] {
+  .article-body ol:not(.path)[start="11"],
+  #tinymce ol:not(.path)[start="11"] {
     counter-increment: list-counter 10; }
-  .article-body ol:not(.path)[start="12"] {
+  .article-body ol:not(.path)[start="12"],
+  #tinymce ol:not(.path)[start="12"] {
     counter-increment: list-counter 11; }
-  .article-body ol:not(.path)[start="13"] {
+  .article-body ol:not(.path)[start="13"],
+  #tinymce ol:not(.path)[start="13"] {
     counter-increment: list-counter 12; }
-  .article-body ol:not(.path)[start="14"] {
+  .article-body ol:not(.path)[start="14"],
+  #tinymce ol:not(.path)[start="14"] {
     counter-increment: list-counter 13; }
-  .article-body ol:not(.path)[start="15"] {
+  .article-body ol:not(.path)[start="15"],
+  #tinymce ol:not(.path)[start="15"] {
     counter-increment: list-counter 14; }
-  .article-body ol:not(.path)[start="16"] {
+  .article-body ol:not(.path)[start="16"],
+  #tinymce ol:not(.path)[start="16"] {
     counter-increment: list-counter 15; }
-  .article-body ol:not(.path)[start="17"] {
+  .article-body ol:not(.path)[start="17"],
+  #tinymce ol:not(.path)[start="17"] {
     counter-increment: list-counter 16; }
-  .article-body ol:not(.path)[start="18"] {
+  .article-body ol:not(.path)[start="18"],
+  #tinymce ol:not(.path)[start="18"] {
     counter-increment: list-counter 17; }
-  .article-body ol:not(.path)[start="19"] {
+  .article-body ol:not(.path)[start="19"],
+  #tinymce ol:not(.path)[start="19"] {
     counter-increment: list-counter 18; }
-  .article-body ol:not(.path)[start="20"] {
+  .article-body ol:not(.path)[start="20"],
+  #tinymce ol:not(.path)[start="20"] {
     counter-increment: list-counter 19; }
-  .article-body ol:not(.path)[start="21"] {
+  .article-body ol:not(.path)[start="21"],
+  #tinymce ol:not(.path)[start="21"] {
     counter-increment: list-counter 20; }
-  .article-body ol:not(.path)[start="22"] {
+  .article-body ol:not(.path)[start="22"],
+  #tinymce ol:not(.path)[start="22"] {
     counter-increment: list-counter 21; }
-  .article-body ol:not(.path)[start="23"] {
+  .article-body ol:not(.path)[start="23"],
+  #tinymce ol:not(.path)[start="23"] {
     counter-increment: list-counter 22; }
-  .article-body ol:not(.path)[start="24"] {
+  .article-body ol:not(.path)[start="24"],
+  #tinymce ol:not(.path)[start="24"] {
     counter-increment: list-counter 23; }
-  .article-body ol:not(.path)[start="25"] {
+  .article-body ol:not(.path)[start="25"],
+  #tinymce ol:not(.path)[start="25"] {
     counter-increment: list-counter 24; }
-  .article-body ol:not(.path)[start="26"] {
+  .article-body ol:not(.path)[start="26"],
+  #tinymce ol:not(.path)[start="26"] {
     counter-increment: list-counter 25; }
-  .article-body ol:not(.path)[start="27"] {
+  .article-body ol:not(.path)[start="27"],
+  #tinymce ol:not(.path)[start="27"] {
     counter-increment: list-counter 26; }
-  .article-body ol:not(.path)[start="28"] {
+  .article-body ol:not(.path)[start="28"],
+  #tinymce ol:not(.path)[start="28"] {
     counter-increment: list-counter 27; }
-  .article-body ol:not(.path)[start="29"] {
+  .article-body ol:not(.path)[start="29"],
+  #tinymce ol:not(.path)[start="29"] {
     counter-increment: list-counter 28; }
-  .article-body ol:not(.path)[start="30"] {
+  .article-body ol:not(.path)[start="30"],
+  #tinymce ol:not(.path)[start="30"] {
     counter-increment: list-counter 29; }
-  .article-body ol:not(.path).-purple li:before {
+  .article-body ol:not(.path).-purple li:before,
+  #tinymce ol:not(.path).-purple li:before {
     background-color: #7E4082; }
-  .article-body ol:not(.path).-teal li:before {
+  .article-body ol:not(.path).-teal li:before,
+  #tinymce ol:not(.path).-teal li:before {
     background-color: #6BCCB3; }
-  .article-body ol:not(.path).-red li:before {
+  .article-body ol:not(.path).-red li:before,
+  #tinymce ol:not(.path).-red li:before {
     background-color: #D52106; }
 
 ul.takeaway {
