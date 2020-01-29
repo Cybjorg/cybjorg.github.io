@@ -10726,12 +10726,12 @@ figcaption,
   margin: 10px; }
 
 .tox-tbtn:before {
-  width: auto !important; }
+  width: auto !important;
+  margin-left: 3px;
+  margin-right: 3px; }
 
 .tox-tbtn[title='Callout']:before {
-  content: '\f0d0';
-  display: inline-block;
-  color: red; }
+  content: '\f0d0'; }
 
 .tox-menu:not(:first-child) div[role="menuitem"]:before {
   display: inline-block;
@@ -10756,3 +10756,9 @@ figcaption,
 
 .tox-collection__group div[title='Yellow']:before {
   background-color: #F6DC6B; }
+
+.tox-collection__group div[title="Rounded"]:before {
+  content: "\f0c8"; }
+
+.tox-collection__group div[title="Square"]:before {
+  content: "\f45c"; }
