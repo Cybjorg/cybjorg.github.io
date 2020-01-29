@@ -10734,7 +10734,7 @@ figcaption,
   content: '\f0d0'; }
 
 .tox-menu:not(:first-child) div[role="menuitem"]:before {
-  width: auto !important;
+  width: auto;
   content: '';
   margin-left: 3px;
   margin-right: 3px; }
@@ -10754,32 +10754,32 @@ figcaption,
 .tox-menu:not(:first-child) div[title="Corners"]:before {
   content: "\f0c8"; }
 
-.tox-collection__group div[title='Purple']:before {
+.tox-menu:not(:first-child) div[title='Purple']:before {
   background-color: #7E4082;
   height: 18px;
   width: 18px !important; }
 
-.tox-collection__group div[title='Teal']:before {
+.tox-menu:not(:first-child) div[title='Teal']:before {
   background-color: #6BCCB3;
   height: 18px;
   width: 18px !important; }
 
-.tox-collection__group div[title='Orange']:before {
+.tox-menu:not(:first-child) div[title='Orange']:before {
   background-color: #E56A54;
   height: 18px;
   width: 18px !important; }
 
-.tox-collection__group div[title='Blue']:before {
+.tox-menu:not(:first-child) div[title='Blue']:before {
   background-color: #4EC3E0;
   height: 18px;
   width: 18px !important; }
 
-.tox-collection__group div[title='Gray']:before {
+.tox-menu:not(:first-child) div[title='Gray']:before {
   background-color: #A4A9AD;
   height: 18px;
   width: 18px !important; }
 
-.tox-collection__group div[title='Yellow']:before {
+.tox-menu:not(:first-child) div[title='Yellow']:before {
   background-color: #F6DC6B;
   height: 18px;
   width: 18px !important; }
