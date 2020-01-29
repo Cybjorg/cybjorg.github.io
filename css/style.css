@@ -10739,6 +10739,21 @@ figcaption,
   margin-left: 3px;
   margin-right: 3px; }
 
+.tox-menu:not(:first-child) div[title="Rounded"]:before {
+  content: "\f0c8"; }
+
+.tox-menu:not(:first-child) div[title="Square"]:before {
+  content: "\f45c"; }
+
+.tox-menu:not(:first-child) div[title="Color"]:before {
+  content: "\f53f"; }
+
+.tox-menu:not(:first-child) div[title="Icons"]:before {
+  content: "\f86d"; }
+
+.tox-menu:not(:first-child) div[title="Corners"]:before {
+  content: "\f0c8"; }
+
 .tox-collection__group div[title='Purple']:before {
   background-color: #7E4082;
   height: 18px;
@@ -10768,18 +10783,3 @@ figcaption,
   background-color: #F6DC6B;
   height: 18px;
   width: 18px !important; }
-
-.tox-collection__group div[title="Rounded"]:before {
-  content: "\f0c8"; }
-
-.tox-collection__group div[title="Square"]:before {
-  content: "\f45c"; }
-
-.tox-collection__group div[title="Color"]:before {
-  content: "\f53f"; }
-
-.tox-collection__group div[title="Icons"]:before {
-  content: "\f86d"; }
-
-.tox-collection__group div[title="Corners"]:before {
-  content: "\f0c8"; }
