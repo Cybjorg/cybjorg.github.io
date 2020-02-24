@@ -11035,9 +11035,6 @@ figcaption,
 .tox-tbtn[title='Callout']:before {
   content: '\f0d0'; }
 
-.tox-tbtn[title='Add Title']:before {
-  content: '\f315'; }
-
 .tox-menu div[role="menuitem"]:before {
   width: auto;
   content: '';
@@ -11058,6 +11055,9 @@ figcaption,
 
 .tox-menu div[title="Corners"]:before {
   content: "\f0c8"; }
+
+.tox-menu div[title="Add Title"]:before {
+  content: "\f315"; }
 
 .tox-menu div[title='Purple']:before {
   background-color: #7E4082;
