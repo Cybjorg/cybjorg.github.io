@@ -11033,7 +11033,7 @@ figcaption,
   margin-right: 3px; }
 
 .tox-tbtn[title='Callout']:before {
-  content: '\f0d0'; }
+  content: '\f27a'; }
 
 .tox-menu div[role="menuitem"]:before {
   width: auto;
@@ -11058,6 +11058,9 @@ figcaption,
 
 .tox-menu div[title="Add Title"]:before {
   content: "\f315"; }
+
+.tox-menu div[title="Browser"]:before {
+  content: "\f37e"; }
 
 .tox-menu div[title='Purple']:before {
   background-color: #7E4082;
