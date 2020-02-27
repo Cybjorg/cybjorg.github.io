@@ -11035,6 +11035,9 @@ figcaption,
 .tox-tbtn[title='Callout']:before {
   content: '\f27a'; }
 
+.tox-tbtn[title='Webinar']:before {
+  content: '\f26c'; }
+
 .tox-menu div[role="menuitem"]:before {
   width: auto;
   content: '';
