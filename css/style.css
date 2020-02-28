@@ -11373,6 +11373,11 @@ figcaption,
 #tinymce {
   margin: 10px; }
 
+.mce-content-body .conditional,
+.mce-content-body .-expires,
+.mce-content-body [data-expire] {
+  display: block !important; }
+
 .tox-tbtn:before {
   width: auto !important;
   margin-left: 3px;
