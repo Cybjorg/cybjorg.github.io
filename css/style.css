@@ -7409,9 +7409,9 @@ section {
   width: 0;
   height: 0; }
 
-.conditional,
-.-expires,
-[data-expire] {
+*:not(.tinymce) .conditional,
+*:not(.tinymce) .-expires,
+*:not(.tinymce) [data-expire] {
   display: none; }
 
 /*
@@ -11372,11 +11372,6 @@ figcaption,
 	*/
 #tinymce {
   margin: 10px; }
-
-.mce-content-body .conditional,
-.mce-content-body .-expires,
-.mce-content-body [data-expire] {
-  display: block !important; }
 
 .tox-tbtn:before {
   width: auto !important;
